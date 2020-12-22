@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: RICH-NIM-paper.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: laser_stand.aux
+A level-1 auxiliary file: pavel_model.aux
+A level-1 auxiliary file: measurements.aux
+A level-1 auxiliary file: maroc_calibration.aux
+A level-1 auxiliary file: cross_talk.aux
+A level-1 auxiliary file: results.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: elsarticle-num-names.bst
+Database file #1: RICH.bib
+Warning--I didn't find a database entry for ""
+Warning--to sort, need author or key in H8500
+Warning--to sort, need author or key in H12700
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Warning--empty author in H8500
+Warning--empty journal in H8500
+Warning--empty year in H8500; set to ????
+Warning--empty author in H12700
+Warning--empty journal in H12700
+Warning--empty year in H12700; set to ????
+You've used 10 entries,
+            2918 wiz_defined-function locations,
+            696 strings with 7207 characters,
+and the built_in function-call counts, 5909 in all, are:
+= -- 437
+> -- 201
+< -- 7
++ -- 80
+- -- 69
+* -- 681
+:= -- 837
+add.period$ -- 12
+call.type$ -- 10
+change.case$ -- 69
+chr.to.int$ -- 9
+cite$ -- 22
+duplicate$ -- 459
+empty$ -- 457
+format.name$ -- 97
+if$ -- 1103
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 89
+newline$ -- 61
+num.names$ -- 32
+pop$ -- 157
+preamble$ -- 1
+purify$ -- 65
+quote$ -- 0
+skip$ -- 106
+stack$ -- 0
+substring$ -- 264
+swap$ -- 313
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 8
+while$ -- 32
+width$ -- 0
+write$ -- 138
+(There were 9 warnings)

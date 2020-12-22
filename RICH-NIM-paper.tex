@@ -1,0 +1,75 @@
+%\documentclass[5p,times,longtitle,preprint]{elsarticle}
+\documentclass[5p,times,preprint]{elsarticle}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{soul}
+
+%\usepackage[]{lineno}
+%\renewcommand\linenumberfont{\ttfamily\bfseries\tiny}
+%\setlength\linenumbersep{5pt}
+%\linenumbers
+
+\usepackage{enumerate}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal pion\index{\footnote{}}t
+\usepackage{bm}% bold math
+\usepackage{color}% bold math
+
+\usepackage{epstopdf}
+\usepackage{subcaption}
+ \usepackage{url}
+ 
+\hyphenpenalty=1500
+\exhyphenpenalty=1500
+\journal{Nuclear Instruments and Methods in Physics Research A}
+\begin{document}
+\begin{frontmatter}
+\title{Characterization of Hammamatsu Multianode Photo Multiplier Tubes H8500 and H12700}
+
+\author[A]{P.~Degtiarenko }
+\author[B]{A. Kim \corref{cor1}} 
+\ead{kenjo@jlab.org}
+\cortext[cor1]{ Corresponding author Tel: +1 757 269 6356}
+\author[A]{V. Kubarovsky }
+
+\author[C]{A. Smith}
+
+\address[A]{Jefferson Lab, Newport News, Virginia, USA}
+\address[B]{University of Connecticut, Storrs, CT 0626, USA}
+\address[C]{Duke University, Durham, NC 2770, USA}
+
+
+
+\begin{abstract}
+Characterization of Hammamatsu Multianode Photo Multiplier Tubes H8500 and H12700.
+\end{abstract}
+
+\begin{keyword}
+Ring Imaging Cherenkov detector \sep
+Multianode Photo Multiplier tubes H8500 and H12700 \sep
+Photon detector \sep Photomultiplier  \sep
+Photoelectron  \sep  Signal amplitude spectra \sep 
+Photon detection efficiency
+\end{keyword}
+
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{introduction}			% vpk
+\include{laser_stand}  		% Andrey
+\include{pavel_model}		% pavel
+\include{measurements}		% Andrey
+\include{maroc_calibration}	%Drew
+\include{cross_talk}			% Drew
+\include{results}			% All
+\include{conclusion}			%All
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{elsarticle-num-names}
+\bibliography{RICH}
+
+
+\end{document}
