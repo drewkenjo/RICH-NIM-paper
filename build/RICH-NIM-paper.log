@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.12.22)  22 DEC 2020 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.12.22)  22 DEC 2020 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **RICH-NIM-paper.tex
-(/home/kenjo/Downloads/RICH-NIM-paper/RICH-NIM-paper.tex
+(/home/kenjo/RICH-NIM-paper/RICH-NIM-paper.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03>
-(/home/kenjo/Downloads/RICH-NIM-paper/elsarticle.cls
+(/home/kenjo/RICH-NIM-paper/elsarticle.cls
 Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
 \@bls=\dimen138
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -742,7 +742,7 @@ Overfull \hbox (1.90001pt too wide) has occurred while \output is active
 
 
 ]
-(/home/kenjo/Downloads/RICH-NIM-paper/introduction.tex
+(/home/kenjo/RICH-NIM-paper/introduction.tex
 <figures/RICHdetector.pdf, id=13, 1149.09305pt x 1310.49597pt>
 File: figures/RICHdetector.pdf Graphic file (type pdf)
 <use figures/RICHdetector.pdf>
@@ -755,9 +755,8 @@ Package pdftex.def Info: figures/RICHpanel_front.png  used on input line 7.
 (pdftex.def)             Requested size: 176.39923pt x 99.0849pt.
 ) [2
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/RICHdetector.pdf> </home/kenjo/D
-ownloads/RICH-NIM-paper/figures/RICHpanel_front.png>]
-(/home/kenjo/Downloads/RICH-NIM-paper/laser_stand.tex
+ </home/kenjo/RICH-NIM-paper/figures/RICHdetector.pdf> </home/kenjo/RICH-NIM-pa
+per/figures/RICHpanel_front.png>] (/home/kenjo/RICH-NIM-paper/laser_stand.tex
 <figures/blackbox.png, id=36, 830.35219pt x 549.55313pt>
 File: figures/blackbox.png Graphic file (type png)
 <use figures/blackbox.png>
@@ -803,28 +802,26 @@ es,
 
 
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/blackbox.png> </home/kenjo/Downl
-oads/RICH-NIM-paper/figures/beamspot.pdf> </home/kenjo/Downloads/RICH-NIM-paper
-/figures/beamsquare.pdf
+ </home/kenjo/RICH-NIM-paper/figures/blackbox.png> </home/kenjo/RICH-NIM-paper/
+figures/beamspot.pdf> </home/kenjo/RICH-NIM-paper/figures/beamsquare.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/bea
-msquare.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/surfaceuniform1.pdf
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/beamsquare.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> </home/kenjo/RICH-NIM-paper/figures/surfaceuniform1.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/sur
-faceuniform1.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/surfaceuniform3.pdf
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/surfaceunifor
+m1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/sur
-faceuniform3.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/surfaceuniform2.pdf
+> </home/kenjo/RICH-NIM-paper/figures/surfaceuniform3.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/sur
-faceuniform2.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/surfaceunifor
+m3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> </home/kenjo/RICH-NIM-paper/figures/surfaceuniform2.pdf
+
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/surfaceunifor
+m2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
 >]
 <figures/fe1.pdf, id=118, 690.33733pt x 482.80376pt>
 File: figures/fe1.pdf Graphic file (type pdf)
@@ -872,8 +869,8 @@ Overfull \hbox (4.36008pt too wide) in paragraph at lines 126--133
 th
  []
 
-[4 </home/kenjo/Downloads/RICH-NIM-paper/figures/fe1.pdf> </home/kenjo/Download
-s/RICH-NIM-paper/figures/frontendPMT.pdf>]
+[4 </home/kenjo/RICH-NIM-paper/figures/fe1.pdf> </home/kenjo/RICH-NIM-paper/fig
+ures/frontendPMT.pdf>]
 <figures/LaserSetup.jpg, id=136, 4111.36pt x 2312.64pt>
 File: figures/LaserSetup.jpg Graphic file (type jpg)
 <use figures/LaserSetup.jpg>
@@ -913,24 +910,24 @@ Overfull \hbox (3.35005pt too wide) in paragraph at lines 209--62
 
  []
 
-[5 </home/kenjo/Downloads/RICH-NIM-paper/figures/LaserSetup.jpg> </home/kenjo/D
-ownloads/RICH-NIM-paper/figures/SlowWaveForm_MAROC.pdf> </home/kenjo/Downloads/
-RICH-NIM-paper/figures/SlowWaveForm_RICH.pdf
+[5 </home/kenjo/RICH-NIM-paper/figures/LaserSetup.jpg> </home/kenjo/RICH-NIM-pa
+per/figures/SlowWaveForm_MAROC.pdf> </home/kenjo/RICH-NIM-paper/figures/SlowWav
+eForm_RICH.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/Slo
-wWaveForm_RICH.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/FastShaper_MAROC.pdf
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/SlowWaveForm_
+RICH.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> </home/kenjo/RICH-NIM-paper/figures/FastShaper_MAROC.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/Fas
-tShaper_MAROC.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/FastWaveForm_RICH.pdf
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/FastShaper_MA
+ROC.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> </home/kenjo/RICH-NIM-paper/figures/FastWaveForm_RICH.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/Fas
-tWaveForm_RICH.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
->] (/home/kenjo/Downloads/RICH-NIM-paper/pavel_model.tex
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/FastWaveForm_
+RICH.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>] (/home/kenjo/RICH-NIM-paper/pavel_model.tex
 Overfull \hbox (4.20001pt too wide) in paragraph at lines 5--11
 \OT1/txr/m/n/10 H12700 MAPMTs from Hama-matsu. Con-se-quently, Pavel Degt-
  []
@@ -949,13 +946,12 @@ Package pdftex.def Info: figures/PavelPassport.pdf  used on input line 26.
 
 
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/SPEfit.pdf> </home/kenjo/Downloa
-ds/RICH-NIM-paper/figures/PavelPassport.pdf
+ </home/kenjo/RICH-NIM-paper/figures/SPEfit.pdf> </home/kenjo/RICH-NIM-paper/fi
+gures/PavelPassport.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/Pav
-elPassport.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->] (/home/kenjo/Downloads/RICH-NIM-paper/measurements.tex
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/PavelPassport
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (/home/kenjo/RICH-NIM-paper/measurements.tex
 <figures/SPEhv.pdf, id=395, 250.72835pt x 212.33206pt>
 File: figures/SPEhv.pdf Graphic file (type pdf)
 <use figures/SPEhv.pdf>
@@ -981,14 +977,12 @@ Package pdftex.def Info: figures/mu.pdf  used on input line 45.
 
 
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/SPEhv.pdf> </home/kenjo/Download
-s/RICH-NIM-paper/figures/effratio.pdf
+ </home/kenjo/RICH-NIM-paper/figures/SPEhv.pdf> </home/kenjo/RICH-NIM-paper/fig
+ures/effratio.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/eff
-ratio.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
-> </home/kenjo/Downloads/RICH-NIM-paper/figures/mu.pdf, page is rotated 90 degr
-ees>]
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/effratio.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> </home/kenjo/RICH-NIM-paper/figures/mu.pdf, page is rotated 90 degrees>]
 <figures/nu.pdf, id=641, 519.30676pt x 357.68123pt>
 File: figures/nu.pdf Graphic file (type pdf)
 <use figures/nu.pdf>
@@ -1007,13 +1001,12 @@ Underfull \hbox (badness 1097) in paragraph at lines 78--78
 
 ) [8
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/nu.pdf> </home/kenjo/Downloads/R
-ICH-NIM-paper/figures/scale.pdf
+ </home/kenjo/RICH-NIM-paper/figures/nu.pdf> </home/kenjo/RICH-NIM-paper/figure
+s/scale.pdf
 
-pdfTeX warning: pdflatex (file /home/kenjo/Downloads/RICH-NIM-paper/figures/sca
-le.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-
->] (/home/kenjo/Downloads/RICH-NIM-paper/maroc_calibration.tex
+pdfTeX warning: pdflatex (file /home/kenjo/RICH-NIM-paper/figures/scale.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>] (/home/kenjo/RICH-NIM-paper/maroc_calibration.tex
 Overfull \hbox (6.61948pt too wide) in paragraph at lines 3--4
 \OT1/txr/m/n/10 slow shaper sig-nal from ADC chan-nels into charge. The MAROC
  []
@@ -1057,12 +1050,11 @@ Package pdftex.def Info: figures/CA7811_w1_g064_v1100_056_pC.png  used on input
 
 
 
- </home/kenjo/Downloads/RICH-NIM-paper/figures/adc_v_charge.png> </home/kenjo/D
-ownloads/RICH-NIM-paper/figures/GA0982_w1_g064_v1100_063_adc.png> </home/kenjo/
-Downloads/RICH-NIM-paper/figures/GA0982_w1_g064_v1100_063_pC.png> </home/kenjo/
-Downloads/RICH-NIM-paper/figures/CA7811_w1_g064_v1100_056_adc.png> </home/kenjo
-/Downloads/RICH-NIM-paper/figures/CA7811_w1_g064_v1100_056_pC.png>]
-(/home/kenjo/Downloads/RICH-NIM-paper/cross_talk.tex
+ </home/kenjo/RICH-NIM-paper/figures/adc_v_charge.png> </home/kenjo/RICH-NIM-pa
+per/figures/GA0982_w1_g064_v1100_063_adc.png> </home/kenjo/RICH-NIM-paper/figur
+es/GA0982_w1_g064_v1100_063_pC.png> </home/kenjo/RICH-NIM-paper/figures/CA7811_
+w1_g064_v1100_056_adc.png> </home/kenjo/RICH-NIM-paper/figures/CA7811_w1_g064_v
+1100_056_pC.png>] (/home/kenjo/RICH-NIM-paper/cross_talk.tex
 Overfull \hbox (3.9601pt too wide) in paragraph at lines 3--4
 []\OT1/txr/m/n/10 Electronic crosstalk is present in both the H12700 and H8500
  []
@@ -1100,22 +1092,19 @@ sloped
 
 
 
-] [11 </home/kenjo/Downloads/RICH-NIM-paper/figures/H12700_ct.png>]
-[12 </home/kenjo/Downloads/RICH-NIM-paper/figures/H8500_ct.png>]
-(/home/kenjo/Downloads/RICH-NIM-paper/results.tex) [13
+] [11 </home/kenjo/RICH-NIM-paper/figures/H12700_ct.png>] [12 </home/kenjo/RICH
+-NIM-paper/figures/H8500_ct.png>] (/home/kenjo/RICH-NIM-paper/results.tex) [13
 
 
 
 
 
-]
-(/home/kenjo/Downloads/RICH-NIM-paper/conclusion.tex) [14
+] (/home/kenjo/RICH-NIM-paper/conclusion.tex) [14
 
 
 
 
-]
-(./RICH-NIM-paper.bbl
+] (./RICH-NIM-paper.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 61--65
 []\OT1/txr/m/n/8 Hamamatsu mul-ti-an-ode pmt h12700, (????). $\OT1/cmtt/m/n/8 h
 ttps : / / www .
@@ -1145,7 +1134,7 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  6803 strings out of 479383
- 101357 string characters out of 5875829
+ 101147 string characters out of 5875829
  391852 words of memory out of 5000000
  23681 multiletter control sequences out of 15000+600000
  445106 words of font info for 127 fonts, out of 8000000 for 9000
@@ -1160,7 +1149,7 @@ c/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on RICH-NIM-paper.pdf (15 pages, 13430995 bytes).
+Output written on RICH-NIM-paper.pdf (15 pages, 13430802 bytes).
 PDF statistics:
  713 PDF objects out of 1000 (max. 8388607)
  452 compressed objects within 5 object streams
