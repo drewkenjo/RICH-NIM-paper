@@ -11,7 +11,7 @@ To remove the non-linearity within the ADC readout, a procedure was developed to
 
 This calibration data was used to convert the measured amplitude in ADC channels into charge collected on an event-by-event basis. The interpolation is done by assigning quadratic functions to every calibration data point to obtain local estimates of the charge as a function of ADC channels. The quadratic functions are obtained by fitting the nearest 5 data points, so that the value of the function is not constrained to equal the measured ADC channels at the given injected charge. For each event, the charge is estimated as a linearly weighted average between the extrapolations of the quadratic functions from the nearest two data points. Fig.~\ref{fig:H12700calib} and Fig.~\ref{fig:H8500calib} show typical amplitude distributions before and after this conversion is applied for one H12700 MAPMT pixel and one H8500 MAPMT pixel, respectively. For both, the conversion to charge extends the high-amplitude tails of the spectra due to the nonlinearity of the ADC readout.
 
-\begin{figure}[hbt]
+\begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/GA0982_w1_g064_v1100_063_adc.png}
 	\includegraphics[width=\linewidth]{figures/GA0982_w1_g064_v1100_063_pC.png}	
@@ -19,7 +19,7 @@ This calibration data was used to convert the measured amplitude in ADC channels
 	\label{fig:H12700calib}
 \end{figure}
 
-\begin{figure}[hbt]
+\begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/CA7811_w1_g064_v1100_056_adc.png}
 	\includegraphics[width=\linewidth]{figures/CA7811_w1_g064_v1100_056_pC.png}	

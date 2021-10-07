@@ -18,22 +18,25 @@
 
 \usepackage{epstopdf}
 \usepackage{subcaption}
- \usepackage{url}
+\usepackage{tcolorbox}
+\usepackage{url}
  
 \hyphenpenalty=1500
 \exhyphenpenalty=1500
 \journal{Nuclear Instruments and Methods in Physics Research A}
 \begin{document}
 \begin{frontmatter}
-\title{Characterization of Hammamatsu Multianode Photo Multiplier Tubes H8500 and H12700}
+\title{Characterization of Multianode Photomultiplier Tubes for use in CLAS12 RICH Detector}
 
 \author[A]{P.~Degtiarenko }
 \author[B]{A. Kim \corref{cor1}} 
 \ead{kenjo@jlab.org}
 \cortext[cor1]{ Corresponding author Tel: +1 757 269 6356}
 \author[A]{V. Kubarovsky }
-
+\author[A]{B. Raydo}
 \author[C]{A. Smith}
+
+
 
 \address[A]{Jefferson Lab, Newport News, Virginia, USA}
 \address[B]{University of Connecticut, Storrs, CT 0626, USA}
@@ -42,12 +45,13 @@
 
 
 \begin{abstract}
-Characterization of Hammamatsu Multianode Photo Multiplier Tubes H8500 and H12700.
+Characterization of Multianode Photomultiplier Tubes for use in CLAS12 RICH Detector.
+%Characterization of Hamamatsu Multianode Photo Multiplier Tubes H8500 and H12700.
 \end{abstract}
 
 \begin{keyword}
 Ring Imaging Cherenkov detector \sep
-Multianode Photo Multiplier tubes H8500 and H12700 \sep
+Hamamatsu Multianode Photo Multiplier tubes H8500 and H12700 \sep
 Photon detector \sep Photomultiplier  \sep
 Photoelectron  \sep  Signal amplitude spectra \sep 
 Photon detection efficiency
@@ -56,16 +60,23 @@ Photon detection efficiency
 
 \end{frontmatter}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{introduction}			% vpk
-\include{laser_stand}  		% Andrey
-\include{pavel_model}		% pavel
-\include{measurements}		% Andrey
-\include{maroc_calibration}	%Drew
-\include{cross_talk}			% Drew
-\include{results}			% All
-\include{conclusion}			%All
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tcolorbox}[halign=center,colback=white,colbacktitle=red!40!white,colframe=red!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=4pt,title={\bfseries\color{black}For draft only, to be removed in final version}]
+\tableofcontents
+\end{tcolorbox}
+
+\input{introduction}	  % vpk
+\input{laser_stand}  	  % Andrey
+\input{electronics}  	  % Andrey
+\input{maroc_calibration} % Drew
+\input{cross_talk}		  % Drew
+\input{laser_calibration} % Drew
+\input{pavel_model}		  % pavel
+\input{measurements}	  % Andrey
+\input{results}			  % All
+\input{conclusion}		  % All
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{elsarticle-num-names}
