@@ -20,48 +20,42 @@ The three-tiles electronics module with and without 3 H12700 MAPMTs installed is
   \label{fig:feboards}
 \end{figure}
 
-The MAROC chip consists of 64 independent channels.
-The single channel has a pre-amplification and configurable 8 bit gain correction stage followed by independent binary and analog lines.
-The binary line is digital and most suitable for the RICH application.
-We are planning to analyze the performance of MAROC chip as a function of its threshold and gain.
-Additionally front-end electronics stability and noise will be tested as well.
-
-
-\section*{Front-End Electronics for RICH}
-
-
-Due to the high number of active channels in readout subsystem of the RICH detector and available limited space the Multi Anode ReadOut Chips (MAROC) were chosen to construct highly integrated front-end electronics with modular design.
-The MAROC performances were checked and found suitable for the RICH requirements.
-Each chip is equipped with single channel adjustable preamplifier, configurable signal shaping, slow shaper capable of charge measurements and binary output with fast shaping and adjustable threshold.
-The custom modular design as shown on Fig.~\ref{fig:feboards} consists of sandwich architecture where one board hosts the ASIC chips (2 or 3 per board) and another active board hosts the FPGA to manage and configure the ASICs, the third board is a passive adapter for MAPMT sockets.
-It satisfies the following requirements:
+Each MAROC chip consists of 64 independent channels and is equipped with single channel adjustable preamplifier, configurable signal shaping, slow shaper capable of charge measurements and binary output with fast shaping and adjustable threshold.
+%The single channel has a pre-amplification and configurable 8 bit gain correction stage followed by independent binary and analog lines.
+%The binary line is digital and most suitable for the RICH application.
+%We are planning to analyze the performance of MAROC chip as a function of its threshold and gain.
+%Additionally front-end electronics stability and noise will be tested as well.
+The performance of MAROC chips was tested and was found suitable for RICH requirements:
 \begin{itemize}
-\item 100\% efficiency at 1/3 of single photoelectron signal (50~fC)
-\item time resolution of 1~ns
-\item short deadtime to sustain the trigger rate of 20~kHz
-\item latency of 8~$\mu s$
+	\item 100\% efficiency at 1/3 of single photoelectron signal (50~fC)
+	\item time resolution of 1~ns
+	\item short deadtime to sustain the trigger rate of 20~kHz
+	\item latency of 8~$\mu s$
 \end{itemize}
-The conceptual design of the electronics readout boards was finished in the RICH development phase and currently we have several board implementations available at Jefferson Lab and INFN for final tests.
 
-The preliminary measurements with internal onboard charge injector, external charge injector and signal generator were performed to test and calibrate FE electronics.
-However, the measurements of custom front-end electronics together with installed MAPMTs in the RICH Black Box setup are crucial for understanding the their future performance in the RICH detector in CLAS12.
-RICH MAPMT test setup was modified to house two FE board at once inside the black box as shown on Fig.~\ref{fig:FEmount}.
-The focus of the modification was to adapt the test setup in such way that the swap of FE boards would be fast and easy.
+%The custom modular design as shown on Fig.~\ref{fig:feboards} consists of sandwich architecture where one board hosts the ASIC chips (2 or 3 per board) and another active board hosts the FPGA to manage and configure the ASICs, the third board is a passive adapter for MAPMT sockets.
+%The conceptual design of the electronics readout boards was finished in the RICH development phase and currently we have several board implementations available at Jefferson Lab and INFN for final tests.
+
+The measurements of custom front-end electronics together with installed MAPMTs in the RICH Black Box setup were crucial for understanding the their performance in the RICH detector in CLAS12.
+To test and calibrate FE electronics the multiple tests with internal onboard charge injector, external charge injector and signal generator were performed.
+RICH MAPMT test setup was modified to house two FE boards inside the black box as shown on Fig.~\ref{fig:FEmount}.
+%The focus of the modification was to adapt the test setup in such way that the swap of FE boards would be fast and easy.
 The PCB guidelines were installed inside the black box to ensure easy mounting and dismounting procedure universal for both 2-MAPMT and 3-MAPMT FE modules.
-This requirement exists in light of the future measurements that our group is expected to perform on all FE modules for testing purposes.
-Each FE module is connected to the low voltage power supply to power FPGA and ASIC boards. The communication between FPGA board and PC is performed using TCP/IP protocol via optical fiber network cable.
+%This requirement exists in light of the future measurements that our group is expected to perform on all FE modules for testing purposes.
+Each FE module is connected to the low voltage power supply to power FPGA and ASIC boards.
+The communication between FPGA board and PC is performed using TCP/IP protocol via optical fiber network cable.
 The HV cables, one per each module, supply power for attached MAPMTs.
-The Data Acquision program runs on external PC under Linux OS, configures FPGA and MAROC boards and collects the data through the network interface.
-As before the laser with neutral density filters and light diffuser is installed on moving platform to allow illumination of individual MAPMTs with different light intensities.
-The current setup allows fast evaluation of FE modules with highly automatized procedure which is important because RICH will be utilizing 113 tiles with 3 MAPMTs and 23 tiles with 2 MAPMTs FE modules to house 391 MAPMTs.
+The Data Acquisition program runs on external PC under Linux OS, configures FPGA and MAROC boards and collects the data through network interface.
+Similarly to previous configuration, the laser with neutral density filters and light diffuser is installed on a moving platform to allow illumination of individual MAPMTs with different light intensities.
+The current setup allows fast evaluation of FE modules with highly automatized procedure which is important because RICH panel consists of 113 tiles with 3-MAPMTs and 23 tiles with 2-MAPMTs FE modules to house 391 MAPMTs.
 
-The planned measurements will group individual boards with MAPMTs and treat them as a inseparable unit that will go into the final assembly of RICH detector.
-Every unit will be tested in the black box setup to mimic the conditions of SPE regime expected during the RICH routine operations.
-The calibration procedures will be developed and evaluated during these test measurements.
-The gain equalization, individual channel amplification parameters and optimal threshold values will be investigated and resolved.
-In addition, self-triggering capabilities of FE modules allow careful dark current measurements.
-The previous measurements and evaluation of MAPMTs with different readout systems (JLab FADC) will be compared with FE measurements to better understand the MAPMTs and FE performances.
-The calibration procedures will be developed and evaluated during these test measurements.
+%The measurements will group individual boards with MAPMTs and treat them as a inseparable unit that will go into the final assembly of RICH detector.
+%Every unit will be tested in the black box setup to mimic the conditions of SPE regime expected during the RICH routine operations.
+%The calibration procedures will be developed and evaluated during these test measurements.
+%The gain equalization, individual channel amplification parameters and optimal threshold values will be investigated and resolved.
+%In addition, self-triggering capabilities of FE modules allow careful dark current measurements.
+%The previous measurements and evaluation of MAPMTs with different readout systems (JLab FADC) will be compared with FE measurements to better understand the MAPMTs and FE performances.
+%The calibration procedures will be developed and evaluated during these test measurements.
 
 \begin{figure}[hbt]
   \centering
@@ -70,24 +64,24 @@ The calibration procedures will be developed and evaluated during these test mea
   \label{fig:FEmount}
 \end{figure}
 
-The MAROC chip used to read MAPMT outputs has two main paths to feed the preamplified input current:
-\begin{itemize}
-\item analog line with a slow shaper which allow the injected charge measurements
-\item binary line with a fast shaper followed by a discriminator with configurable threshold which allows to deliver trigger outputs
-\end{itemize}
-Both lines are independent and highly configurable.
-The slow shaper can not be used during normal operation of RICH detector due to relatively small HOLD latency of 200 ns.
-It can, however, be used for calibration purposes.
-On the other hand the digital line with fast shaper is suitable for RICH operation and will be used to detect signals from Cherenkov photons incident on the readout panel.
+%The MAROC chip used to read MAPMT outputs has two main paths to feed the preamplified input current:
+%\begin{itemize}
+%\item analog line with a slow shaper which allow the injected charge measurements
+%\item binary line with a fast shaper followed by a discriminator with configurable threshold which allows to deliver trigger outputs
+%\end{itemize}
+%Both lines are independent and highly configurable.
+%The slow shaper can not be used during normal operation of RICH detector due to relatively small HOLD latency of 200 ns.
+%It can, however, be used for calibration purposes.
+%On the other hand the digital line with fast shaper is suitable for RICH operation and will be used to detect signals from Cherenkov photons incident on the readout panel.
 
-The preliminary measurements of MAPMTs signal were taken using the FE tile with 3-MAPMTs installed inside the RICH black box.
-Both lines were evaluated as shown of Fig.~\ref{fig:slowWaveform} and~\ref{fig:fastWaveform}
+The measurements of MAPMTs signal were taken using the FE tile with 3-MAPMTs installed inside the RICH black box.
+Both lines were evaluated as shown of Fig.~\ref{fig:slowWaveform} and~\ref{fig:fastWaveform}.
 The internal pulse generator was used to trigger laser through its adjustable external trigger input achieving synchronization between light source and MAROC readout.
 Then the data were collected with both lines collecting data in parallel.
 Fig.~\ref{fig:slowMAROC} shows the slow shaper waveform for different charge injections from MAROC3 datasheet.
 On the right Fig.~\ref{fig:slowJLab} shows the same waveform obtained from the data collected at Jefferson Lab using RICH test setup with laser and MAPMT.
 In order to reconstruct the waveform of the slow shaper, the hold delays parameters was changed from 1 to 100 and data were collected at different values.
-This measurements alow us to find the best value of the hold delay for internal ADC conversions which correpond to the signal maximum at around (13 ticks = 104 ns).
+This measurements allow us to find the best value of the hold delay for internal ADC conversions which correspond to the signal maximum at around (13 ticks = 104 ns).
 It ensures the largest precision to the charge measurements.
 The shape of the analog output waveform is configurable and its gain and peaking speed can be changed.
 
@@ -127,15 +121,15 @@ The shape of the analog output waveform is configurable and its gain and peaking
 \end{figure}
 
 
-The digital line can be sampled with a predefined clock on an adequate deep external digital pipeline with event information available promtly in parallel making it suitable for the RICH application.
+The digital line can be sampled with a predefined clock on an adequate deep external digital pipeline with event information available promptly in parallel making it suitable for the RICH application.
 The binary information comes from the discrimination of the fast shaper lines output.
 On Fig.~\ref{fig:fastMAROC} the fast shaper waveform is shown for fixed injected charge from MAROC3 datasheet.
 On the right fig.~\ref{fig:fastJLab} shows the the dependence of time over threshold versus threshold values.
-The digital line reports the time when fast shaper waveform crosses the thhreshold value giving us the leading and trailing edges.
-To reconstruct fast shaper waverform the measurements with different threshold values were collected and the time of leading and trailing edges were plotted.
-As expected at higher thresholds the signal crosses the threhold later and has a shorter time over threshold.
+The digital line reports the time when fast shaper waveform crosses the threshold value giving us the leading and trailing edges.
+To reconstruct fast shaper waveform the measurements with different threshold values were collected and the time of leading and trailing edges were plotted.
+As expected at higher thresholds the signal crosses the threshold later and has a shorter time over threshold.
 Also the spread of SPE response from MAPMT gives us preliminary indication of signal's time walk which can be further corrected to improve time resolution.
-The behaviour at high threshold might not represent the expected performance because the signal reaches saturation and loses its linearity.
+The behavior at high threshold might not represent the expected performance because the signal reaches saturation and loses its linearity.
 
 
 Preliminary measurements of MAROC3 and MAPMTs demonstrate good time and charge resolution allowing to further improve our MAPMTs measurements and their understanding.
