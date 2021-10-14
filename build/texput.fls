@@ -1,4 +1,0 @@
-PWD /home/kenjo/RICH-NIM-paper/build
-INPUT /usr/share/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdftex.fmt
-OUTPUT texput.log
