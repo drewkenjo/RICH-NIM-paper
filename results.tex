@@ -1,5 +1,35 @@
 \section{Results}
 
+This section reports on the study of 399 MAPMTs H12700, acquired for the RICH2 detector upgrade. All of them were tested in the same conditions by the groups of six mounted in the Maroc tiles and irradiated simultaneously. The test procedure included six different setup conditions: two sets of the high voltage applied (1000 V and 1100 V), and three laser light intensity settings at the wheel positions 3, 4, and 6. The data were accumulated and pre-processed to make the non-linearity corrections and to convert the amplitudes to the units of electric charge. After that the data were transferred to the ``parameterization factory'' computer workstation in which every accumulated spectrum was automatically analyzed and approximated with the 12-parameter fitting function, as it is explained in the earlier sections. Every PMT was issued the ``MAPMT passport'' document listing the fit parameters for every measurement, for all 64 anodes, showing the extracted SPE functions, and the parameter dependencies on pixel number, as illustrated in Figs. \ref{fig:LA2527_passport} and \ref{fig:LA2527_passport_spectra}. The most important parameters extracted from the analysis for every pixel are $scale$, measuring the average charge collected at the anode from the single photoelectron events; the average multiplicity $\mu$ of the photoelectrons per laser pulse, that can be converted to the quantum efficiency of the pixel when normalized to calibrated incoming light in the pulse; the calculated optimal threshold value for the separation of the single photoelectron events from pedestal (including the cross talk background), and corresponding estimate of the photodetection efficiency based on that value. Parameters of interest are also the characteristics of the photomultiplier, such as the evaluated in the model gain on the first dynode, amplitude width and intensity of the cross talk signal. The pedestal $\sigma$ parameter characterizes the quality of the Maroc measurement channel.
+
+The six independent measurements in different conditions were used to verify the self-consistency of the results, using the model approximation features allowing the $scale$ parameter to be measured at various light conditions, ideally providing the same value, and similarly allowing the $\mu$ parameter (and hence the quantum efficiency) to be measured at various high voltages, also providing the same value. These features may be found in all ``MAPMT passports'', and also they are further illustrated in the following figures. Fig. \ref{fig:pglobal_sc} shows the distribution of $scale$ parameter through the whole data set, separately for different high voltage and illumination settings. The distributions are clearly identical if obtained in different illuminations, and the change in high voltage is seen as approximate multiplication of the $scale$ parameter by a factor about 2 when switching from HV = 1000 V to HV = 1100 V. Logarithmic scale in x axis in the plot helps to see the multiplication as a shift on the plot, roughly preserving the shape of the distribution. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/pglobal_sc.pdf}
+	\caption{Distribution of $scale$ (average charge per ph.e) as determined by the fitting procedure for a set of 399 PMTs. All measured pixels contributed to the plots. Distributions measured at HV = 1000 V are shown by solid lines, the ones at HV = 1100 V by dashed lines. The three colors correspond to the three different illuminations (essentially on top of each other).
+	}
+	\label{fig:pglobal_sc}
+\end{figure}
+
+Fig. \ref{fig:pglobal_qe_all} shows the similar pattern for the $\mu$ parameter, with the difference that $\mu$ essentially does not depend on high voltage, but proportional to the light intensity. The plot shows that the distributions at different high voltages are on top of each other at a given light intensity, but shift in log scale when light intensity changes. In the plot the parameter $\mu$ is shown normalized to the number of photons coming to each pixel in the ``wheel position 3'' setting, to provide the value of quantum efficiency in it. 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/pglobal_qe_all.pdf}
+	\caption{Distribution of $\mu$ divided by the measured number of photons per pulse at wheel position 3. All measured pixels contributed to the plots. Distributions measured at HV = 1000 V are shown by violet, the ones at HV = 1100 V by red color (essentially on top of each other). The three line styles (dotted, dashed, and solid) correspond to different illumination. For the data collected at wheel position 3, this ratio is the quantum efficiency of the individual pixels.}
+	\label{fig:pglobal_qe_all}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\linewidth, trim={0mm 0mm 0mm 19mm}, clip]{figures/pglobal_nu.pdf}
+	\caption{Distribution of $\nu$ (average gain on 1st dynode) as determined by the fitting procedure for a set of 399 PMTs.}
+	\label{fig:pglobal_nu}
+\end{figure}
+
+
+
 
 Large number of MAPMTs from Hamamatsu (XX of H8500 type, and XXX of H12700 type) were studied using the dedicated test stand at JLab. Their performance as single photon detectors was evaluated and characterized in conditions close to their future operations in the CLAS12 RICH detector.
 
@@ -12,161 +42,6 @@ The parameter database accumulated as the result of this work may be used for th
 
 The data also provide the opportunity to evaluate the spread of such parameters in the mass production of the PSPMT devices as the channel gains, quantum efficiencies, SPE spectral shapes, parameters of the cross-talk, - across the face of each tube, and across the whole set. The results show that the quality of PSPMT mass production at Hamamatsu is high and satisfies our needs in the good quality single photoelectron detection.
 
-
-
-
-\begin{figure*}[t]
-	\centering
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 80mm 85mm},clip]{figures/pavel_temp/CA7811_w2_g064_v1000_3mm.09.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={80mm 6cm 6cm 85mm},clip]{figures/pavel_temp/CA7811_w3_g064_v1000_cln.09.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\vspace{0mm}
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 80mm 85mm},clip]{figures/pavel_temp/CA7811_w2_g064_v1000_6mm.09.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={80mm 6cm 6cm 85mm},clip]{figures/pavel_temp/CA7811_w3_g064_v1000_raw.09.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\caption{SPE probability distributions for PMT CA7811 (H8500), pixel 9, at HV = 1000 V. Top Left: 3mm mask. Bottom left: 6mm mask. Top right: run with full PMT face open, cross-talk events removed by the correlation analysis. Bottom right: run with full PMT face open, the contribution to the spectrum from the cross-talk events is approximated and parameterized by the analysis algorithm. The cross talk effects are too wide to be approximated correctly.}
-	\label{fig:CA7811_fits}
-\end{figure*}
-
-\vspace{5cm}
-
-\begin{figure*}[b]
-	\centering
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/pavel_temp/GA0516_w2_g064_v1000_3mm.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/pavel_temp/GA0516_w3_g064_v1000_cln.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\vspace{0mm}
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/pavel_temp/GA0516_w2_g064_v1000_6mm.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/pavel_temp/GA0516_w3_g064_v1000_raw.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\caption{SPE probability distributions for PMT GA0516 (H12700), pixel 9, at HV = 1000 V. Top Left: 3mm mask. Bottom left: 6mm mask. Top right: run with full PMT face open, cross-talk events removed by the correlation analysis. Bottom right: run with full PMT face open, the contribution to the spectrum from the cross-talk events is approximated and parameterized by the analysis algorithm.}
-	\label{fig:GA0516_fits}
-\end{figure*}
-
-
-\begin{figure*}[b]
-	\centering
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w2_g064_v1100_3mm.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w3_g064_v1100_cln.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\vspace{0mm}
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w2_g064_v1100_6mm.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w3_g064_v1100_raw.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\caption{Same as Fig.~\ref{fig:GA0516_fits}, but all the data taken at HV = 1100 V.}
-	\label{fig:GA0516_hv1100_fits}
-\end{figure*}
-
-\begin{figure*}[b]
-	\centering
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w2_g064_v1000_6mm_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w2_g064_v1100_6mm_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\vspace{0mm}
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w2_g064_v1000_raw_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w2_g064_v1100_raw_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\caption{SPE probability distributions for PMT GA0516, pixel 4, wheel position 2, at HV = 1000 V (left plots) and at HV = 1100 V (right plots). Top plots: run with 6 mm mask covering the full PMT face except pixel 4. Bottom plots: run with full PMT face open, the contribution to the spectrum from the crosstalk events is approximated and parametrized by the analysis algorithm.}
-	\label{fig:GA0516_w2_fits}
-\end{figure*}
-
-\begin{figure*}[b]
-	\centering
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w1_g064_v1000_6mm_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w1_g064_v1100_6mm_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\vspace{0mm}
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={6cm 6cm 75mm 85mm},clip]{figures/GA0516_w1_g064_v1000_raw_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\begin{subfigure}[c]{0.42\linewidth}
-		\centering
-		\includegraphics[width=\linewidth, trim={75mm 6cm 6cm 85mm},clip]{figures/GA0516_w1_g064_v1100_raw_log.04.png}
-		\vspace{0mm}
-	\end{subfigure}%%
-	\caption{Same as Fig.~\ref{fig:GA0516_w2_fits} but at the wheel position 1.}
-	\label{fig:GA0516_w1_fits}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\includegraphics[width=0.85\textwidth]{figures/pavel_temp/LA2527_passport_temp.png}
-	\caption{Illustration of the "PSPMT Passport" plots for one of the tubes, LA2527. The standard six measurements included runs at three illumination settings (wheel positions 3, 4, and 6), each at two operating high voltage values (1000 V, and 1100 V).}
-	\label{fig:LA2527_passport}
-\end{figure*}
-
-
-\begin{figure*}
-	\centering
-	\includegraphics[width=0.85\textwidth]{figures/pavel_temp/LA2527_spectra_temp.png}
-	\caption{Illustration of the "PSPMT Passport" plots for one of the tubes, LA2527, continued. The standard six measurements included runs at three illumination settings (wheel positions 3, 4, and 6), each at two operating high voltages (1000 V, and 1100 V). Shown are the calculated SPE functions, defined by the fit parameters resulting from the independent fitting procedures for each six settings. Blue color corresponds to the three sets at HV = 1000 V, and red - to the runs at HV = 1100 V. The fit parameters of the independent fits at three different illuminations result in very stable SPE shapes, essentially overlapping each other in the plots.}
-	\label{fig:LA2527_passport_spectra}
-\end{figure*}
 
 \begin{figure}
 	\centering
