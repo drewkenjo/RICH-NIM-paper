@@ -1,7 +1,0 @@
-import os
-
-env = Environment()
-
-Export('env')
-
-env.SConscript('sconscript', variant_dir='build', duplicate=0)
