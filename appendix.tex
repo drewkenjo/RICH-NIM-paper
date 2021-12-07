@@ -1,0 +1,46 @@
+\newpage
+\newpage
+\appendix
+\section{}
+\label{AppendixA}
+
+In the case of H12700 MAPMTs the signal amplitudes of the crosstalk contributions from different neighboring pixels were found to be relatively small and similar to each other, allowing us to use in the model the single averaged spectral term for all neighbors of a given pixel. Every crosstalk contribution comes from a single electron in one of the neighboring pixels, their average number in one measurement $\beta$ is expected to be comparable with $\mu$, and multiple crosstalk events in one measurement happen independently. That means that the probability of observing $i$ crosstalk contributions in one event is distributed according to the Poisson distribution
+\begin{equation}
+\label{CTPoisson}
+ P(i;\beta) = \frac{\beta^{i} e^{-\beta}}{i!}.
+\end{equation}
+Poisson-like shapes of the general SPE distribution functions suggest the shape of the crosstalk contribution in the form of a Poisson distribution, scaled to represent the portion of the charge generated in the neighboring pixel, transferred to the pixel studied. The representation of such distribution for one crosstalk electron takes the form
+\begin{equation}
+\label{C1Poisson}
+ C_1(j) = P(j;\lambda) = \frac{\lambda^{j} e^{-\lambda}}{j!},
+\end{equation}
+where $j$ is the non-negative integer, corresponding to the amplitude values $a_j = j \zeta / \lambda $, relating the discrete Poisson scale to the set of $a$ values such that the average crosstalk contribution to the measurement function from one crosstalk electron was equal to the value of $\zeta$ parameter (the average $\langle j \rangle$ in Eq.~(\ref{C1Poisson}) equals to $\lambda$).
+
+Corresponding distributions for the events with $i$ crosstalk electrons then take the form of convolution powers, which can be explicitly calculated in the case of Poisson distributions: 
+\begin{equation}
+\label{CiPoisson}
+ C_i(j) = C_1^{*i}(j) = P(j;i\lambda).
+\end{equation}
+
+Thus, similar to Eq. (13) in Ref.~\cite{DEGTIARENKO20171}, the discrete distribution can be represented as a function of the normalized amplitude $a$ in the form of the infinite sum of correspondingly weighted delta-functions, one per each value of $j \geq 0$:
+\begin{equation}
+\label{deltaf}
+  D_{ct}(a)= \sum\limits_{j=0}^{\infty}
+  \delta \left (a - \frac{j\zeta}{\lambda} \right )
+   \sum\limits_{i=0}^{\infty} P(i;\beta) C_i(j) .
+\end{equation}
+The convolution of this distribution with the Gaussian measurement function (sigma equal to $\sigma_a$) will result in the continuous function similar to Eq.~(15) in~\cite{DEGTIARENKO20171}:
+\begin{equation}
+\label{RCmodel}
+  R_{ct}(a)= \sum\limits_{j=0}^{\infty} \frac{1}{\sqrt{2 \pi} \ \sigma_a} 
+  \exp{\left [- \frac{(a - j \zeta / \lambda)^{2}}{2 
+\ \sigma_a^{2}} \right ]}
+   \sum\limits_{i=0}^{\infty} P(i;\beta) C_i(j) .
+\end{equation}
+
+The new function $R_{ct}(a)$, parametrically dependent on $\sigma_a$, $\beta$, $\zeta$, $\lambda$, describes the effective measurement function applied to every signal. Recorded signals are the results of the convolution with this function. In particular, in the events with no photoelectrons ($m=0$), the pedestal distribution takes the form of $R_{ct}(a)$. For a given set of parameters the function $R_{ct}(a)$ is evaluated numerically in the model implementation and then used in the calculations as described in Ref.~\cite{DEGTIARENKO20171}, by replacing the measurement function $R(a)$ with $R_{ct}(a)$ in convolution with $D(a)$ function in Eq.~(14) in Ref.~\cite{DEGTIARENKO20171}. The function $D(a)$ as defined in Eq.~(13), Ref.~\cite{DEGTIARENKO20171}, much like the function $D_{ct}(a)$ in Eq.~(\ref{deltaf}) in this work, represents the infinite set of delta-functions, and the convolution calculation just needs the values of the tabulated function $R_{ct}(a)$ in all the final sums. The new equivalent for Eq.~(16) in Ref.~\cite{DEGTIARENKO20171} is thus
+\begin{equation}
+\label{GCmodel}
+  G_{ct}(a,n;\sigma_a,\beta,\zeta,\lambda)= R_{ct}(a-n/\nu;\sigma_a,\beta,\zeta,\lambda).
+\end{equation}
+The new function $G_{ct}(a,n;\sigma_{\mathrm{eff}},\beta,\zeta,\lambda)$ is then used to replace the function $G(a,n;\sigma_{\mathrm{eff}})$ in the final model equation, Eq.~(36) in Ref.~\cite{DEGTIARENKO20171}, keeping the same form. The change is that instead of being a standard Gaussian, the measurement function is now distorted by the crosstalk contribution, requiring three extra parameters to approximate the data.
