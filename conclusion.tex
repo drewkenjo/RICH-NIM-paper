@@ -1,5 +1,16 @@
 \section{Conclusion}
-We have tested several hundred Hamamatsu H12700 and H8500 multi-anode photomultiplier tubes in order to evaluate the application of these MAPMTs in the Ring Imaging Cherenkov detectors. The PMT’s performance study was done using the laser stand with low light illumination to simulate one-photoelectron regime as expected in the real experiment. We were using the state-of-the-art mathematical model for the characterization of the photomultipliers that were design to describe the PMT’s signals with low number of photoelectrons. 
+
+As a part of CLAS12 RICH detector upgrade at Jefferson Lab, we have conducted a mass study of 399 H12700 MAPMTs from Hamamatsu, with the goal to evaluate every tube and characterize every pixel in terms of their gain, quantum efficiency, crosstalk contribution, and optimized threshold for detecting single Cherenkov photons. The dedicated test setup included precision picosecond laser, gears for the relative positioning MAPMTs in the setup, RICH detector front-end electronics, and fully automated data acquisition and control systems. The non-linearity of the DAQ, the ADC-to-Charge conversion calibration parameters of every channel, and the absolute calibration of the number of laser photons reaching every pixel in every event were measured in special separate experiments. The bulk measurements consisted of six expositions of every group of six MAPMTs at three levels of low light and two applied high voltages, 1.0 kV, and 1.1 kV. The systematic errors dependent on the MAPMT placement in the group of six were evaluated and found to be within the final parameter uncertainties.
+
+In a set of dedicated detailed studies we observed and quantified the pixel-to-pixel signal crosstalk using the 2D amplitude distribution analysis. Using several representative MAPMTs of both types we have found that the H8500 model is characterized by a quite significant amplitude spectral contributions to a given pixel from its neighbors in the matrix, with such crosstalk contributions reaching up to 50\% of the spectral amplitude. At the same time the crosstalk in H12700 MAPMTS was generally less than about 3-5\%. The methods of separating and taking into account the crosstalk contributions to the amplitude distributions from any pixel have been developed, using the 2D analysis, and also approximating and evaluating the contributions based on the spectral shape, using the computational model. The first approach is applicable to all MAPMTs studied, but it is labor intensive and works correctly only in the conditions of extremely low light in the tests. The second approach works well for H12700 MAPMTs, and it was used for the bulk measurements.
+
+The accumulated amplitude spectra were corrected to the non-linearity of the DAQ, and converted to the calibrated total charge distributions. The recently published state-of-the-art computational model, describing photon detector response functions measured in the conditions of low light, was extended to include the successful description of the crosstalk contributions to the spectra from the neighboring pixels. The updated model was used to parameterize and extract the SPE response functions of every pixel, and characterize its properties such as gain, quantum efficiency, the crosstalk contribution, and determine the optimal signal threshold values to evaluate its efficiency to Cherenkov photons. The stability and reproduceability of the extracted parameter values were verified by the comparison of the six independent measurements of each pixel, allowing us to evaluate the uncertainties in the measurements of the major model parameters. One of the extracted parameters, the average multiplication of a photoelectron on the first dynode $\nu$ was found significantly larger on the H12700 compared to H8500 MAPMTs. That difference corresponds to the resulting difference between the SPE efficiency of the two models.  That observation, together with much smaller crosstalk contributions, generally confirms our early decision to switch to H12700 as the MAPMT of choice for the RICH detector.
+
+The database of extracted parameters will be used for the final selection and arrangement of the MAPMTs in the new RICH detector, and determine their optimal operation parameters, such as the values of operating high voltage, gains and thresholds of the front-end electronics. The results show that the quality of H12700 MAPMT mass production at Hamamatsu is high, satisfying our needs in the good position-sensitive single photoelectron detectors.
+
+THE PREVIOUS VERSION:
+
+We have tested several hundred Hamamatsu H12700 and H8500 multi-anode photomultiplier tubes in order to evaluate the application of these MAPMTs in the Ring Imaging Cherenkov detectors. The PMT’s performance study was done using the laser stand with low light illumination to simulate one-photoelectron regime as expected in the real experiment. We were using the state-of-the-art computational model for the characterization of the photomultipliers that were design to describe the PMT’s signals with low number of photoelectrons. 
 The model was modified to take into account the effects of the cross-talk between the neighboring pixels. 
 The stability of the fit parameters was proven using measurements in different laser beam intensities and at different applied high voltages. Thus, the model allowed us to characterize the photomultipliers independently of the test measurement conditions.
 We carefully studied the critical for the experiments PMT's properties for the H12700 and H8500 Hamamatsu models:
@@ -17,3 +28,21 @@ The results show that the quality of MAPMT mass production at Hamamatsu is high 
  
 
 
+\section{Acknowledgements}
+This material is based upon work supported by the U.S. Department of Energy, Office of Science, Office of Nuclear Physics under contract DE-AC05-06OR23177.
+We sincerely thank 
+Bishnu Karki,
+Charles Hanretty,
+Aiden Boyer,
+Chris  Cuevas,
+Matteo Turisini and
+Carl Zorn
+for their technical support and help in taking and analyzing experimental  data. We would
+also like to thank 
+Patrizia Rossi, 
+Marco Contalbrigo, 
+Marco Mirazita,
+Fatiha Benmokhtar,
+Kyungseon Joo,
+and Zhiwen Zhao
+for the fruitful discussions, continuous support and interest to this work.
