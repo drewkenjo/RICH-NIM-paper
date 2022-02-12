@@ -12,7 +12,7 @@ This distribution was observed to vary between chips and pixels, and thus indivi
 	\label{fig:MAROCcalib}
 \end{figure}
 
-This calibration data was used to convert the measured amplitude in ADC channels into charge collected on an event-by-event basis. The interpolation was done by assigning quadratic functions to every calibration data point to obtain local estimates of the charge as a function of ADC channel. The quadratic functions were obtained by fitting the nearest 5 data points, so that the value of the function was not constrained to equal the measured ADC channel at the given injected charge. For each event, the charge was estimated as a linearly weighted average between the extrapolations of the quadratic functions from the nearest two data points. Figure ~\ref{fig:H12700calib} and Fig.~\ref{fig:H8500calib} show typical amplitude distributions before and after this conversion was applied for one H12700 MAPMT pixel and one H8500 MAPMT pixel, respectively. For both, the conversion to charge extends the high-amplitude tails of the spectra due to the non-linearity of the ADC readout.
+This calibration data was used to convert the measured amplitude in ADC channels into charge collected on an event-by-event basis. A local polynomial regression was used to provide a one-to-one mapping of adc channel to charge. Figure ~\ref{fig:H12700calib} and Fig.~\ref{fig:H8500calib} show typical amplitude distributions before and after this conversion was applied for one H12700 MAPMT pixel and one H8500 MAPMT pixel, respectively. For both, the conversion to charge extends the high-amplitude tails of the spectra due to the non-linearity of the ADC readout.
 
 \begin{figure}[hbt!]
 	\centering
