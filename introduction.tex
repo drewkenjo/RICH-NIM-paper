@@ -13,30 +13,30 @@ The photomatrix  wall is a crucial component of the RICH detector (see Fig.~\ref
 Due to the imaging aspect of the RICH they must provide a spatial resolution of less than 1 cm.
 Since multiple photon detectors are tiled into large arrays, they should have large active area with minimal dead-space.
 The photon detectors must also efficiently detect single photon level signals and should be sensitive to visible light due to the aerogel radiator material.
-Multianode Photomultiplier Tubes (MAPMTs) from Hamamatsu are perfect candidates for the CLAS12 RICH detector, as they are flat-panel PMTs offering an adequate compromise between detector performance and cost.
-Each MAPMT consists of an 8 by 8 array of pixels, each with dimension of 6~mm x 6~mm.
+Multianode Photomultiplier Tubes from Hamamatsu are perfect candidates for the CLAS12 RICH detector, as they are flat-panel PMTs offering an adequate compromise between detector performance and cost.
+Each MaPMT consists of an 8 by 8 array of pixels, each with dimension of 6~mm x 6~mm.
 Furthermore, the device has a very high packing fraction of 89\% with a high quantum efficiency in the visible light region.
 The tubes also have excellent immunity to magnetic fields because all internal parts are housed in a metal package and the distance between dynode electrodes is very short.
 
 
-Initially, the Hamamatsu H8500 MAPMT model \cite{H8500} was chosen as the best option because they provide high quantum efficiency for visible light and sufficient spatial resolution (6x6 mm$^2$) at a limited cost.
-However, Hamamatsu has released the new H12700 MAPMT model  \cite{H12700} that shows enhanced single photoelectron (SPE) detection, reduced cross-talk between pixels, and is otherwise similar in spatial resolution and  cost to the H8500 MAPMTs.
+Initially, the Hamamatsu H8500 MaPMT model \cite{H8500} was chosen as the best option because they provide high quantum efficiency for visible light and sufficient spatial resolution (6x6 mm$^2$) at a limited cost.
+However, Hamamatsu has released the new H12700 MaPMT model  \cite{H12700} that shows enhanced single photoelectron (SPE) detection, reduced cross-talk between pixels, and is otherwise similar in spatial resolution and  cost to the H8500 MaPMTs.
 The first RICH detector was installed in sector 4 of the CLAS12 detector in 2018.
-There are 391 Hamamatsu MAPMTs  in the photodector matrix, 76 of them are H8500 and 315 H12700. 
-The second RICH detector is almost identical the first one and presently under construction scheduled to be installed soon.
+There are 391 Hamamatsu MaPMTs  in the photodector matrix, 76 of them are H8500 and 315 H12700. 
+The second RICH detector is almost identical to the first one and presently under construction scheduled to be installed soon.
 %The initial characterization of these PMTs was done using a laser stand equipped with a crate of Flash ADC  boards \cite{FADC250} because the custom RICH front-end electronics \cite{RICH_FE} was not ready at that time.
-The characterization of PMTs for both detectors was done using a laser stand equipped with custom front-end electronics boards which have much better parameters than the FADCs~\cite{FADC250} used for preliminary studies and installed in the most of the CLAS12 subsystems.
-This highly integrated front-end (FE) electronics with modular design~\cite{RICH_FE} was developed for a large array of Hamamatsu H8500 and H12700 MAPMTs to minimize the impact of the electronics material on the CLAS12 subsystems downstream of the RICH detector.
+The characterization of MaPMTs for both detectors was done using a laser stand equipped with custom front-end electronics boards which have much better parameters than the FADCs~\cite{FADC250} used for preliminary studies and installed in the most of the CLAS12 subsystems.
+This highly integrated front-end (FE) electronics with modular design~\cite{RICH_FE} was developed for a large array of Hamamatsu H8500 and H12700 MaPMTs to minimize the impact of the electronics material on the CLAS12 subsystems downstream of the RICH detector.
 The architecture of the readout electronics consists of front-end cards with dedicated Application Specific Integrated Circuits (ASICs), configured, controlled, and read out by Field Programmable Gate Arrays (FPGAs) \cite{RICH_FE}.
 The ASIC board is based on the MAROC3  integrated circuit \cite{MAROC} whose excellent single photon capabilities both in analog and binary mode have been confirmed.
-%The final design has consists of stacked PCB layers behind each MAPMT sensor (see~Fig.~\ref{fig:feboards}).
+%The final design has consists of stacked PCB layers behind each MaPMT sensor (see~Fig.~\ref{fig:feboards}).
 %The first layer houses the ASIC front end and ancillary components (e.g. external amplifier) and it is directly connected to the anodes array.
 %A second PCB will host the FPGA in charge of configuring, managing and acquiring one or more ASICs and the low voltage and HV bias distribution.
 %The use of the JLab SSP as controller and collector of the front-end data provides a strong synergy with the current JLab upgrade activity.
 %Data are transmitted on high speed serial (optical) lines minimizing the wiring and therefore the material budget.
 %With that sandwich architecture the total photon detection surface will be covered by a fixed number of basic units or tiles made up by two or three sensor each.
-%The total spacing for electronics will not exceed 20 cm in depth (including MAPMT and mechanical support).
-The three-tile electronics module with and without the three H12700 MAPMTs installed is shown in~Fig.~\ref{fig:feboards}.
+%The total spacing for electronics will not exceed 20 cm in depth (including MaPMT and mechanical support).
+The three-tile electronics module with and without the three H12700 MaPMTs installed is shown in~Fig.~\ref{fig:feboards}.
 The performance of the MAROC chips was tested and was found suitable for the RICH requirements:
 \begin{itemize}
 	\item 100\% efficiency at 1/3 of the single photoelectron signal (50~fC)
@@ -44,15 +44,15 @@ The performance of the MAROC chips was tested and was found suitable for the RIC
 	\item short deadtime to sustain a trigger rate of 30~kHz
 	\item latency of 8~$\mu$s
 \end{itemize}
-We made detailed characterizations of around 400 H12700 PMTs, as well as several H8500  to make a comparison of the two models.
-These data give us the possibility to better understand the performance of the first RICH where we are using both PMT models.
+We made detailed characterizations of around 400 H12700 MaPMTs, as well as several H8500  to make a comparison of the two models.
+These data give us the possibility to better understand the performance of the first RICH where we are using both MaPMT models.
 The results of this study are presented in this paper.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.8\linewidth]{figures/fe1.pdf}
   \includegraphics[width=0.8\linewidth]{figures/frontendPMT.pdf}
-  \caption{Front-end electronics readout board and mounted MAPMTs.}
+  \caption{Front-end electronics readout board and mounted MaPMTs.}
   \label{fig:feboards}
 \end{figure}
 
