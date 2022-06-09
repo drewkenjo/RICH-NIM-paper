@@ -15,12 +15,12 @@ Since multiple photon detectors are tiled into large arrays, they should have la
 The photon detectors must also efficiently detect single photon level signals and should be sensitive to visible light due to the aerogel radiator material.
 Multianode Photomultiplier Tubes from Hamamatsu are perfect candidates for the CLAS12 RICH detector, as they are flat-panel PMTs offering an adequate compromise between detector performance and cost.
 Each MaPMT consists of an 8 by 8 array of pixels, each with dimension of 6~mm x 6~mm.
-Furthermore, the device has a very high packing fraction of 89\% with a high quantum efficiency in the visible light region.
+Furthermore, the device has a very high packing fraction of 89\% with a high quantum efficiency of 20-30\% in the visible light region.
 The tubes also have excellent immunity to magnetic fields because all internal parts are housed in a metal package and the distance between dynode electrodes is very short.
 
 
 Initially, the Hamamatsu H8500 MaPMT model \cite{H8500} was chosen as the best option because they provide high quantum efficiency for visible light and sufficient spatial resolution (6x6 mm$^2$) at a limited cost.
-However, Hamamatsu has released the new H12700 MaPMT model  \cite{H12700} that shows enhanced single photoelectron (SPE) detection, reduced cross-talk between pixels, and is otherwise similar in spatial resolution and  cost to the H8500 MaPMTs.
+However, Hamamatsu has released the new H12700 MaPMT model  \cite{H12700} that shows enhanced single photoelectron (SPE) detection, reduced crosstalk between pixels, and is otherwise similar in spatial resolution and  cost to the H8500 MaPMTs.
 The first RICH detector was installed in sector 4 of the CLAS12 detector in 2018.
 There are 391 Hamamatsu MaPMTs  in the photodector matrix, 76 of them are H8500 and 315 H12700. 
 The second RICH detector is almost identical to the first one and presently under construction scheduled to be installed soon.
@@ -47,6 +47,17 @@ The performance of the MAROC chips was tested and was found suitable for the RIC
 We made detailed characterizations of around 400 H12700 MaPMTs, as well as several H8500  to make a comparison of the two models.
 These data give us the possibility to better understand the performance of the first RICH where we are using both MaPMT models.
 The results of this study are presented in this paper.
+
+The remaining structure of this paper is laid out as follows. 
+\begin{itemize}
+	\item Section 2 presents the design of the laser test stand for the MaPMT automated characterization, allowing illumination of every pixel by the precisely calibrated low light pulses in the controlled stable environment, and collecting the response data. 
+	\item Section 3 describes the procedures for the absolute calibration of the readout electronics converting the output signal amplitudes to linear charge scale in pC for every pixel. 
+	\item Section 4 illustrates the techniques for the pixel-to-pixel crosstalk measurements, and possible algorithms for the separation of the crosstalk from real signals. 
+	\item Section 5 describes the technique of absolute calibration of the light source, as a prerequisite for the measurement of quantum efficiency in every pixel. 
+	\item Section 6 describes the computational model used in the data analysis to extract such critical parameters for each anode, as its quantum efficiency, gain, the shape of the single photoelectron amplitude response function, and contribution of the crosstalk signals from the neighboring pixels, and introducing the novel technique of characterizing the crosstalk contributions in the model. 
+	\item Section 7 illustrates the self-consistency of the algorithm for the parameters' extraction using the measurements at different light intensities and different high voltages applied. 
+	\item Finally, Section 8 presents the results of the full characterization and study of all 399 MaPMTs, showing the spread of the extracted parameters and evaluating the systematic errors from the independent redundant measurements. The results make possible the evaluation of average and individual pixel characteristics of the full MaPMT array for the purposes of selection and arrangement of the MaPMTs in the RICH detector, and for use in the experimental data analysis.
+\end{itemize}
 
 \begin{figure}[htb]
   \centering
