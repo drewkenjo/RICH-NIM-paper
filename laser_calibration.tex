@@ -1,7 +1,7 @@
 \section{Calibration of laser photon flux}
 
 The calibration of the absolute laser photon flux was performed with the use of the silicon photodiode Hamamatsu S2281.
-The tabulated quantum efficiency of this diode at the wavelength of our laser ($\lambda=470$ nm) is 62.6\%. 
+The tabulated quantum efficiency of this diode at the wavelength of our laser ($\lambda=470$ nm) is 62.6\%, taken from the Hamamatsu S2281 Manual. 
 The active part of the diode is a circle with a diameter of 11.3~mm, which is 100~mm$^2$. 
 A KEITHLEY 6485 picoammeter was used to measure the average diode current while illuminated by the laser beam.
 The noise diode current was estimated to be at the level of 0.2~pA. 
@@ -33,4 +33,4 @@ $$
 \noindent
 where $\int_{S_{pixel}}\frac {dN_\gamma}{dS} dS$ is the number of photons integrated over the pixel's area, $S_{pixel}$, and $\epsilon_{QE}$ is the quantum efficiency of the pixel.
 The integration included the measured light field at the position of the pixel under study.
-The parameter $\mu$ was determined during the PMT characterization.
+The parameter $\mu$ was determined during the PMT characterization. Possible photoelectron collection inefficiency was taken into account and approximated in the computational model during the calculation of $\mu$.
