@@ -51,7 +51,7 @@ Line 39: “With a high quantum efficiency in the visible light region” – it
 Fig  10+11:  It  is  difficult  to  clearly  observe  the  various  features  in  the  plots.   Additionally,  there  is no indication in the Figure caption which side of the dashed red line is being cut.  The central figure should have units on the y-axis (counts or arb.  units).  The central figure should probably have the same x-axis range as the other figures in the panel.  Similarly for Fig 11.
 \end{tcolorbox}
 
-\fbox{\bfseries The resolutions of Fig 10+11 were improved, a label was added to the central figures of both, and the axes ranges were made consistent throughout. Additionally, more text was added to the captions for both figures to address which side of the dashed red line is cut, and to help:}
+The resolutions of Fig 10+11 were improved, a label was added to the central figures of both, and the axes ranges were made consistent throughout. Additionally, more text was added to the captions for both figures to address which side of the dashed red line is cut and to clarify the signature of the crosstalk in the neighboring pixels.
 
 \begin{tcolorbox}[enlarge top by=2em,colbacktitle=black!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries1.03]
 Line 234:  Where does this tabulated efficiency of the photodiode come from?  Are there uncertain-ties on this number?
@@ -155,7 +155,11 @@ Line 599 and elsewhere:  I do not think quantum efficiency should be capitalized
 The paper is written as a long experimental note and is characterized by a pronounced verbosity. As a general comment the paper is quite difficult to read.
 \end{tcolorbox}
 
+We believe that being the experimental note, the paper constitutes the state of the art in the experimental approach to the process of selection and calibration of photomultipliers for use in the large scale Cherenkov detectors. 
+
 Apart from being an experimental note, this work introduces the new extension of the calculational model describing the PMT response to few-photoelectron events, which takes into account the description and characterization of the effect of the signal cross-talk in Multianode PMTs. The new method of selection between the true events and the events when a signal is caused by the hit in a neighboring pixel will help improve the spatial resolution of single photoelectron detectors. 
+
+In an attempt to make the paper easier to read we have added at the end of the Introduction the brief descriptions of the Sections' content.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -337,29 +341,25 @@ The new method of selection between the true events and the events when a signal
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=red!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries2.11]
+\begin{tcolorbox}[enlarge top by=2em,colbacktitle=blue!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries2.11]
 In its current form the paper does not satisfy the Journal requirements and should not be published. A major revision is needed, strongly reducing the written text to improve conciseness and reducing the number of plots, inserting only representative ones. What is missing in particular is the list of specifications on the PMTs coming from the physics of the experiment, and the requirements that the PMTs must satisfy to pass the "selection" to be mounted inside the second RICH of CLAS12, as the reader might expect reading the title.
 \end{tcolorbox}
 
-{\centering
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=green!60!white,colframe=black!80!white,width=0.9\linewidth,left=30pt,right=30pt,top=10pt,bottom=10pt,boxrule=0.3pt,title=\bfseries our draft remarks]
-{\bfseries Pavel}
-We respectfully disagree with the request to strongly reduce the written text and number of plots. We believe such change would make the work less comprehensible.  But we agree that the list of the PMT specifications and requirements should be collected in one place in the beginning of the paper.
-\end{tcolorbox}
-}
+We respectfully disagree with the request to strongly reduce the written text and number of plots.
+We believe such change would make the work less comprehensible.
+The list of the PMT specifications and requirements has been added to the introduction as stated in the reply to 2.02.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=red!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries2.12]
+\begin{tcolorbox}[enlarge top by=2em,colbacktitle=blue!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries2.12]
 In addition, the validation of the model using independent data on individual parameters is needed to assess the precision of the used method (just to quote an example, a comparison of QE with independently measured values, e.g. by Hamamatsu or by a calibrated monocromatic light source), which lacks evaluation of systematic uncertainties on the presented parameters.
 \end{tcolorbox}
 
-{\centering
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=green!60!white,colframe=black!80!white,width=0.9\linewidth,left=30pt,right=30pt,top=10pt,bottom=10pt,boxrule=0.3pt,title=\bfseries our draft remarks]
-{\bfseries Pavel}
-I believe the comparison of the QE with Hamamatsu data is given in the paper. We will try to explain it more clearly in the paper. Not sure about the precision comparison of the anode gains with Hamamatsu, but it’s done using different techniques and convoluted with QE, and done with the different light, so it’s difficult numerically. But we can say that qualitatively the agreement is good.
-\end{tcolorbox}
-}
+
+The comparison of the QE with Hamamatsu data is given in the paper.
+Addressing the comments from reviewers helped to improve the clarity of the paper.
+Unfortunately the precise comparison of the anode gains with Hamamatsu data is not possible since they are using different techniques and report values convoluted with quantum efficiencies with unknown scale of light intensities.
+But qualitatively the agreement is good.
 
 
 
