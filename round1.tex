@@ -57,8 +57,9 @@ The resolutions of Fig 10+11 were improved, a label was added to the central fig
 Line 234:  Where does this tabulated efficiency of the photodiode come from?  Are there uncertainties on this number?
 \end{tcolorbox}
 
-\fbox{\bfseries The number comes from the Hamamatsu specifications datasheet. No uncertainties may be found there, and in such case the understanding is that all the digits in the number are meaningful. The text of the paper was changed to address the comment. See before and after version below:}
+The number comes from the Hamamatsu specifications datasheet. No uncertainties may be found there, and in such case the understanding is that all the digits in the number are meaningful. The text of the paper was changed to address the comment. See before and after version below.
 
+\fbox{\bfseries The text of the paper was changed to address the comment. See before and after version below:}
 \includegraphics[width=\linewidth]{round1/1.03.png}
 
 \begin{tcolorbox}[enlarge top by=2em,colbacktitle=black!60!white,colframe=black!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=0.3pt,title=\bfseries1.04]
@@ -199,16 +200,12 @@ depending on the pixel position inside the matrix is the goal of the study prese
 This MaPMT type is also affected by after-pulses, which might have a strong impact for the CLAS12 RICH operations and not mentioned at all in the paper
 \end{tcolorbox}
 
-{\centering
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=green!60!white,colframe=black!80!white,width=0.9\linewidth,left=30pt,right=30pt,top=10pt,bottom=10pt,boxrule=0.3pt,title=\bfseries our remarks]
-{\bfseries Valery}
+
 The after-pulse probability for MaPMT H12700 is expected to be below several percent (see for example M.~Calvi et al.,   ``Characterization of the Hamamatsu H12700A-03 and R12699-03 multi-anode photomultiplier tubes'', Journal of Instrumentation, Volume 10, Issue 09, article id. P09021 (2015)). 
 During our tests we have not seen any effects of the immediate after-pulses or long-delayed after-pulses. 
 No oscilloscope traces or  instabilities in the amplitude spectra showed their presence.
 In general, after-pulses do not have strong impact for the CLAS12 RICH operation. They may increase the accidental noise. However, it does not affect the RICH performance due to the excellent 1~ns time resolution. Experimentally evaluated probability of accidental coincidence per one signal in a pixel, including the possible after-pulses, is very small, of the order of few times of $10^{-5}$.
 %The average pixel background rate at nominal CLAS12 luminosity $10^35~cm^{-2}sec^{-1}$ is 2 kHz. It translates to 0.05 background hits in the full RICH 25,000 pixel's array. This is for the final pixel selections. At the preliminary stage we need to account the different time arrival of photons reflecting from the spherical mirrors that is around 10 ns. Even at this stage the number of background accidental hits is around 0.5. 
-\end{tcolorbox}
-}
 
 
 %{\centering
@@ -307,8 +304,7 @@ The chi2 of the 4 fits presented in Fig. 18 is very high, which indicates that p
 The computational model returns a set of parameters after the fit which should be related to the ``physical observables'' typical of a PMT, like e.g. quantum efficiency (QE) or gain. Most of the ``measurements'' presented in the paper are the result of a fit using the above-mentioned model, and are not compared with independent measurements, which would be necessary to assess the correctness of the model. Only self-consistency checks of the model are partially shown in the paper. 
 \end{tcolorbox}
 
-{\centering
-\begin{tcolorbox}[enlarge top by=2em,colbacktitle=green!60!white,colframe=black!80!white,width=0.9\linewidth,left=30pt,right=30pt,top=10pt,bottom=10pt,boxrule=0.3pt,title=\bfseries our draft remarks]
+
 
 
 The computational model describing the distributions of charge collected during the experiments in the low light conditions uses the set of parameters which includes the physical observables characterizing the PMT (or a pixel in the PMT) objectively. As it has been demonstrated in Ref. 12, and also shown in this work, the model allows to extract the gain (``scale'') from different independent experiments using widely varying illuminations. Changing average number of photons in a test pulse results in the very different charge distributions. However, the computational analysis and the fitting procedure produce the values of gain essentially identical (spread by less than 1\% if measured in the same location in the test matrix, and less than 2\% if measured in all six locations). 
@@ -322,11 +318,9 @@ That is the reason we believe we can declare our parameters to be the physical o
 
 The crude cross-verification of the model was performed by the satisfactory comparisons of the expositions at the extra low illumination with the simplest model assuming that all the events in the charge spectra above the threshold belong to the SPE distribution and calculating average $scale$ and $\mu$ which were consistent with the model results. The method was not used in the mass production as it required longer times, and resulted in lower redundancy and reliability. In addition, that simple method does not allow to check the consistency of the extracted spectra, especially in the case of MaPMTs sometimes exhibiting very complex SPE shapes.    
 
-\end{tcolorbox}
-
-
+\fbox{\bfseries The text of the paper was changed to address the comment. See before and after version below:}
 \includegraphics[width=\linewidth]{round1/2.09.png}
-}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -360,7 +354,7 @@ The top-left plot in Fig. 19 shows the scale (proportional to the PMT anode gain
 In conclusion, the paper presents measurements on a large PMT population (about 400 detectors), which are essentially based on a computational model described in another paper (Ref. [12]).
 \end{tcolorbox}
 
-{\bfseries Please see our response to 2.01:}
+{\bfseries Please see our response to 2.01.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
