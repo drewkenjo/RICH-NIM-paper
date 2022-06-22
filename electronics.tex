@@ -1,26 +1,6 @@
-%\clearpage
-%\section{Front-end electronics$^{}$}
-
-
-
-%Each MAROC chip consists of 64 independent channels and is equipped with single channel adjustable preamplifier, configurable signal shaping, slow shaper capable of charge measurements and binary output with fast shaping and adjustable threshold.
-%The single channel has a pre-amplification and configurable 8 bit gain correction stage followed by independent binary and analog lines.
-%The binary line is digital and most suitable for the RICH application.
-%We are planning to analyze the performance of MAROC chip as a function of its threshold and gain.
-%Additionally front-end electronics stability and noise will be tested as well.
-
-%The custom modular design as shown on Fig.~\ref{fig:feboards} consists of sandwich architecture where one board hosts the ASIC chips (2 or 3 per board) and another active board hosts the FPGA to manage and configure the ASICs, the third board is a passive adapter for MAPMT sockets.
-%The conceptual design of the electronics readout boards was finished in the RICH development phase and currently we have several board implementations available at Jefferson Lab and INFN for final tests.
-
 The measurements of custom front-end electronics together with the installed MaPMTs in the RICH black box setup were crucial to understand their performance in the RICH detector.
 To test and calibrate it, multiple tests with an internal onboard charge injector, an external charge injector, and a signal generator were performed.
 As shown in Fig.~\ref{fig:MAPMTtest}, the RICH MaPMT test setup can house two FE boards inside the black box.
-%The focus of the modification was to adapt the test setup in such way that the swap of FE boards would be fast and easy.
-%The PCB guidelines were installed inside the black box to ensure easy mounting and dismounting procedure universal for both 2-MaPMT and 3-MaPMT FE modules.
-%This requirement exists in light of the future measurements that our group is expected to perform on all FE modules for testing purposes.
-%Each FE module is connected to the low voltage power supply to power FPGA and ASIC boards.
 The communication between the FPGA board and the PC is performed using TCP/IP protocol over optical Ethernet (1000BASE-SX).
-%The HV cables, one per each module, supply power for attached MAPMTs.
 The data acquisition program executes on a remote PC running Linux OS, configures the FPGA and MAROC boards, and collects the data through a network interface.
-%The laser with neutral density filters and light diffuser is installed on a moving platform to allow illumination of individual MAPMTs with different light intensities.
 The current setup allows fast evaluation of the FE modules with a highly automatized procedure, which is important because the RICH panel consists of 115 tiles with 3-MaPMT and 23 tiles with 2-MaPMT FE modules.
