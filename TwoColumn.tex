@@ -1,0 +1,93 @@
+\documentclass[final,5p,times,twocolumn]{elsarticle}
+%\documentclass[preprint]{elsarticle}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{soul}
+
+\usepackage[]{lineno}
+%\renewcommand\linenumberfont{\ttfamily\bfseries\tiny}
+%\setlength\linenumbersep{5pt}
+%\linenumbers
+
+\usepackage{enumerate}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal pion\index{\footnote{}}t
+\usepackage{bm}% bold math
+\usepackage{color}% bold math
+
+\usepackage{epstopdf}
+\usepackage{subcaption}
+\usepackage{tcolorbox}
+\usepackage{url}
+\usepackage{setspace}
+%\doublespacing
+%\hyphenpenalty=1500
+%\exhyphenpenalty=1500
+\journal{Nuclear Instruments and Methods in Physics Research A}
+\begin{document}
+\begin{frontmatter}
+\title{Characterization of Multianode Photomultiplier Tubes for use in the CLAS12 RICH Detector}
+
+\author[A]{P.~Degtiarenko }
+\author[B]{A. Kim \corref{cor1}} 
+\ead{kenjo@jlab.org}
+\cortext[cor1]{ Corresponding author Tel: +1 757 269 6356}
+\author[A]{V. Kubarovsky }
+\author[A]{B. Raydo}
+\author[C]{A. Smith}
+\author[D]{F. Benmokhtar}
+
+
+
+\address[A]{Thomas Jefferson National Accelerator Facility, Newport News, VA 23606, USA}
+\address[B]{University of Connecticut, Storrs, CT 06269, USA}
+\address[C]{Duke University, Durham, NC 27705, USA}
+\address[D]{Duquesne University, Pittsburgh, PA, 15282, USA}
+
+
+
+\begin{abstract}
+We present results of the detailed study of several hundred Hamamatsu H12700 Multianode Photomultiplier Tubes (MaPMTs), characterizing their response to the Cherenkov light photons in the second Ring Imaging Cherenkov detector, a part of the CLAS12 upgrade at Jefferson Lab.
+The total number of pixels studied was 25536.
+The single photoelectron spectra were measured for each pixel at different high voltages and  light intensities of the laser test setup. Using the same dedicated front-end electronics as in the first RICH detector, the setup allowed us to characterize each pixel's properties such as gain, quantum efficiency, signal crosstalk between neighboring pixels,
+and determine the signal threshold values to optimize their efficiency to detect Cherenkov photons.
+A recently published state-of-the-art mathematical model, describing photon detector response functions measured in low light conditions, was extended to include the description of the crosstalk contributions to the spectra.
+The database of extracted parameters will be used for the final selection of the MaPMTs, their arrangement in the new RICH detector, and the optimization of the operational settings of the front-end electronics.
+The results show that the characteristics of the H12700 MaPMTs satisfy our requirements for the position-sensitive single photoelectron detectors.
+\end{abstract}
+
+\begin{keyword}
+Ring Imaging Cherenkov detector \sep
+Hamamatsu Multianode Photomultiplier tubes H8500 and H12700 \sep
+Photon detector \sep Photomultiplier \sep
+Photoelectron \sep  Signal amplitude spectra \sep Signal crosstalk \sep
+Photon detection efficiency
+\end{keyword}
+
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{tcolorbox}[halign=center,colback=white,colbacktitle=red!40!white,colframe=red!80!white,left=0pt,right=0pt,top=0pt,bottom=0pt,boxrule=4pt,title={\bfseries\color{black}For draft only, to be removed in final version}]
+%\tableofcontents
+%\end{tcolorbox}
+
+\input{introduction}	  % vpk
+\input{laser_stand}  	  % Andrey
+\input{electronics}  	  % Andrey
+\input{maroc_calibration} % Drew
+\input{cross_talk}		  % Drew
+\input{laser_calibration} % Drew
+\input{pavel_model}		  % pavel
+\input{measurements}	  % Andrey
+\input{results}			  % All
+\input{conclusion}		  % All
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{elsarticle-num-names}
+\bibliography{RICH}
+
+\input{appendix}		  % All
+
+\end{document}
