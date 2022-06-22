@@ -25,18 +25,10 @@ However, Hamamatsu has released the new H12700 MaPMT model  \cite{H12700} that s
 The first RICH detector was installed in sector 4 of the CLAS12 detector in 2018.
 There are 391 Hamamatsu MaPMTs  in the photodector matrix, 76 of them are H8500 and 315 H12700. 
 The second RICH detector is almost identical to the first one and presently under construction scheduled to be installed soon.
-%The initial characterization of these PMTs was done using a laser stand equipped with a crate of Flash ADC  boards \cite{FADC250} because the custom RICH front-end electronics \cite{RICH_FE} was not ready at that time.
 The characterization of MaPMTs for both detectors was done using a laser stand equipped with custom front-end electronics boards which have much better parameters than the FADCs~\cite{FADC250} used for preliminary studies and installed in the most of the CLAS12 subsystems.
 This highly integrated front-end (FE) electronics with modular design~\cite{RICH_FE} was developed for a large array of Hamamatsu H8500 and H12700 MaPMTs to minimize the impact of the electronics material on the CLAS12 subsystems downstream of the RICH detector.
 The architecture of the readout electronics consists of front-end cards with dedicated Application Specific Integrated Circuits (ASICs), configured, controlled, and read out by Field Programmable Gate Arrays (FPGAs) \cite{RICH_FE}.
 The ASIC board is based on the MAROC3  integrated circuit \cite{MAROC} whose excellent single photon capabilities both in analog and binary mode have been confirmed.
-%The final design has consists of stacked PCB layers behind each MaPMT sensor (see~Fig.~\ref{fig:feboards}).
-%The first layer houses the ASIC front end and ancillary components (e.g. external amplifier) and it is directly connected to the anodes array.
-%A second PCB will host the FPGA in charge of configuring, managing and acquiring one or more ASICs and the low voltage and HV bias distribution.
-%The use of the JLab SSP as controller and collector of the front-end data provides a strong synergy with the current JLab upgrade activity.
-%Data are transmitted on high speed serial (optical) lines minimizing the wiring and therefore the material budget.
-%With that sandwich architecture the total photon detection surface will be covered by a fixed number of basic units or tiles made up by two or three sensor each.
-%The total spacing for electronics will not exceed 20 cm in depth (including MaPMT and mechanical support).
 The three-tile electronics module with and without the three H12700 MaPMTs installed is shown in~Fig.~\ref{fig:feboards}.
 The performance of the MAROC chips was tested and was found suitable for the RICH requirements:
 \begin{itemize}
